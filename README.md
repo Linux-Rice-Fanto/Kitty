@@ -49,3 +49,62 @@ sudo pacman -S kitty
 |`CTRL + SHIFT + <-`    | NAVIGATE TO THE LEFT TABS | BASIC |
 |`CTRL + SHIFT + +`     | INCREASE THE FONT SIZE    | BASIC |
 |`CTRL + SHIFT + -`     | DECREASE THE FONT SIZE    | BASIC |
+
+## Shell Configuration
+
+### Installing ZSH Shell
+
+- I like to use the `zsh` shell into Kitty.
+- To install zsh into Arch Linux use the following command:
+
+```bash
+
+sudo pacman -S zsh
+
+```
+
+- Now we need to define zsh as our default shell into the kitty.conf file:
+
+```bash
+
+shell /bin/zsh
+
+```
+
+- After run this command, logout and login again.
+- Copy the information from the `.zshrc` from this repository into your `~/.zshrc` to have my zsh configuration
+
+### Install oh-my-posh
+
+- To install oh-my-posh use the following command:
+
+```bash
+
+yay -S oh-my-posh-bin
+
+```
+
+- Please check if you have yay into your Arch Linux.
+- You can check all themes availables using this command:
+
+```bash
+
+ls /usr/share/oh-my-posh/themes/
+
+```
+
+### Configuring the oh-my-posh theme into zsh
+
+- Open the configuration file of zsh in `~/.zshrc`
+- There is a theme inside this repository called `space.omp.json` that is my config 
+- Add this line into your .zshrc file:
+
+```bash
+
+eval "$(oh-my-posh init zsh --config ~/config/kitty/space.omp.json)"
+
+```
+
+- Restart the .zshrc using the command: `source ~/.zshrc`
+
+
