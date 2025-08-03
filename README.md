@@ -107,4 +107,20 @@ eval "$(oh-my-posh init zsh --config ~/config/kitty/space.omp.json)"
 
 - Restart the .zshrc using the command: `source ~/.zshrc`
 
+## Add Plugins into zsh shell
 
+- Clone this plugins into the `~/.config/zsh-plugins` directory (if don't exists, create one)
+    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    - [zsh-auto-notify](https://github.com/MichaelAquilina/zsh-auto-notify)
+
+- Add this line into your `~/.zshrc` file
+
+```bash
+
+source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh-plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.config/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh-plugins/zsh-auto-notify/auto-notify.plugin.zsh
+```
