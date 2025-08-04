@@ -131,3 +131,19 @@ bash -c "$(curl -sLo- https://superfile.netlify.app/install.sh)"
 - change the `~/.config/superfile/config.toml` with my `superfile/config.toml`.
 - my theme is the `superfile/fanto-theme.toml` that need to be added at `~/.config/superfile/themes/`.
 
+### Install fastfetch
+
+- _fastfetch_ is the best program to show infos from the system on terminal
+- To install fastfetch use the following command:
+
+```bash
+
+sudo pacman -S fastfetch
+
+```
+
+- Generate the config system using the command: `fastfetch --gen-config`
+- In arch linux is going to generate in `~/.config/fastfetch/config.jsonc`
+- Copy my `fastfetch/config.jsonc` into your computer.
+- My zsh file has an alias to run fastfetch without logo to keep it simple.
+
