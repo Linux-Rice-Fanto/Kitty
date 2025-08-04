@@ -38,3 +38,13 @@ source ~/.config/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # SHOW NOTIFICATIONS WHEN COMMANDS COMPLETE
 source ~/.config/zsh-plugins/zsh-auto-notify/auto-notify.plugin.zsh
+
+
+# ╭────────────╮
+# │ ZSH ALIAS  │
+# ╰────────────╯
+
+alias ls='lsd -la'
+alias update='sudo pacman -Syu'
+alias c='clear'
+alias install='sudo pacman -S'

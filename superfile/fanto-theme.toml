@@ -1,0 +1,84 @@
+# -------------------------------------
+# FANTO THEME FOR THE SUPERFILE PROGRAM
+# -------------------------------------
+# Theme create by: https://github.com/F4NT0
+
+code_syntax_highlight = "catppuccin-macchiato"
+
+# ╭────────────────────────╮
+# │ BORDERS CONFIGURATIONS │
+# ╰────────────────────────╯
+
+file_panel_border = "#89929b"
+sidebar_border = "#161b22"    
+footer_border = "#89929b" 
+file_panel_border_active = "#ecf2f8"
+sidebar_border_active = "#21262d"    
+footer_border_active = "#a2d2fb"     
+modal_border_active = "#7ce38b"
+
+# ╭───────────────────────────╮
+# │ BACKGROUND CONFIGURATIONS │
+# ╰───────────────────────────╯
+
+full_screen_bg = "#0d1117" 
+file_panel_bg = "#0d1117"  
+sidebar_bg = "#0d1117"     
+footer_bg = "#0d1117"      
+modal_bg = "#0d1117"
+
+# ╭───────────────────────────╮
+# │ FOREGROUND CONFIGURATIONS │
+# ╰───────────────────────────╯
+
+full_screen_fg = "#c6cdd5" 
+file_panel_fg = "#c6cdd5" 
+sidebar_fg = "#c6cdd5"     
+footer_fg = "#c6cdd5"      
+modal_fg = "#c6cdd5"
+
+# ╭───────────────────────────────╮
+# │ SPECIAL COLORS CONFIGURATIONS │
+# ╰───────────────────────────────╯
+
+cursor = "#faa356"  
+correct = "#a6da95" 
+error = "#ed8796"   
+hint = "#7dc4e4"    
+cancel = "#ee99a0"  
+
+
+# ╭───────────────────────────╮
+# │ FILE PANEL CONFIGURATIONS │
+# ╰───────────────────────────╯
+
+file_panel_top_directory_icon = "#a6da95" 
+file_panel_top_path = "#8aadf4"           
+file_panel_item_selected_fg = "#c6cdd5"   
+file_panel_item_selected_bg = "#0d1117"   
+
+
+# ╭─────────────────────────╮
+# │ SIDE BAR CONFIGURATIONS │
+# ╰─────────────────────────╯
+
+sidebar_title = "#7dc4e4"            
+sidebar_item_selected_fg = "#91d7e3" 
+sidebar_item_selected_bg = "#24273a" 
+sidebar_divider = "#939ab7"          
+
+# ╭──────────────────────╮
+# │ MODAL CONFIGURATIONS │
+# ╰──────────────────────╯
+
+modal_cancel_fg = "#363a4f" 
+modal_cancel_bg = "#ee99a0" 
+modal_confirm_fg = "#363a4f" 
+modal_confirm_bg = "#91d7e3"
+
+# ╭─────────────────────╮
+# │ HELP CONFIGURATIONS │
+# ╰─────────────────────╯
+
+help_menu_hotkey = "#91d7e3" 
+help_menu_title = "#ee99a0"  

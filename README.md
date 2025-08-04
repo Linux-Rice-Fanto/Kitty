@@ -50,9 +50,9 @@ sudo pacman -S kitty
 |`CTRL + SHIFT + +`     | INCREASE THE FONT SIZE    | BASIC |
 |`CTRL + SHIFT + -`     | DECREASE THE FONT SIZE    | BASIC |
 
-## Shell Configuration
+## Dependencies
 
-### Installing ZSH Shell
+### Install ZSH Shell
 
 - I like to use the `zsh` shell into Kitty.
 - To install zsh into Arch Linux use the following command:
@@ -73,6 +73,7 @@ shell /bin/zsh
 
 - After run this command, logout and login again.
 - Copy the information from the `.zshrc` from this repository into your `~/.zshrc` to have my zsh configuration
+- To understand the configuration, read the [zsh config documentation](zsh-config.md) into this repository.
 
 ### Install oh-my-posh
 
@@ -93,34 +94,40 @@ ls /usr/share/oh-my-posh/themes/
 
 ```
 
-### Configuring the oh-my-posh theme into zsh
+- This oh-my-posh is configured into the zsh shell explained in the [zsh config documentation](zsh-config.md).
 
-- Open the configuration file of zsh in `~/.zshrc`
-- There is a theme inside this repository called `space.omp.json` that is my config 
-- Add this line into your .zshrc file:
+### Install lsd
+
+- _lsd_ is a program to improve visualization of the ls command.
+- To install use the following command:
+
+```bash
+sudo pacman -S lsd
+```
+
+- Configure lsd into zsh adding the following alias into yous `~/.zshrc` file.
+
+```bash
+alias ls='lsd -la'
+```
+
+- To configure lsd read the [lsd config documentation](lsd-config.md).
+
+### Install superfile
+
+- _superfile_ is a linux program that have an TUI to interact with folders and files.
+- [The official superfile github](https://github.com/yorukot/superfile)
+- [The official website documentation](https://superfile.netlify.app/)
+- To install into arch linux use the following command:
 
 ```bash
 
-eval "$(oh-my-posh init zsh --config ~/config/kitty/space.omp.json)"
+bash -c "$(curl -sLo- https://superfile.netlify.app/install.sh)"
 
 ```
 
-- Restart the .zshrc using the command: `source ~/.zshrc`
+- The configurations files are located into `~/.config/superfile`.
+- I have my own custom configuration and theme in this repository.
+- change the `~/.config/superfile/config.toml` with my `superfile/config.toml`.
+- my theme is the `superfile/fanto-theme.toml` that need to be added at `~/.config/superfile/themes/`.
 
-## Add Plugins into zsh shell
-
-- Clone this plugins into the `~/.config/zsh-plugins` directory (if don't exists, create one)
-    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-    - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
-    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-    - [zsh-auto-notify](https://github.com/MichaelAquilina/zsh-auto-notify)
-
-- Add this line into your `~/.zshrc` file
-
-```bash
-
-source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.config/zsh-plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source ~/.config/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.config/zsh-plugins/zsh-auto-notify/auto-notify.plugin.zsh
-```

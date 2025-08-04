@@ -1,0 +1,65 @@
+
+#  ╭──────────────────────────────────────────────────────────────────────────╮
+#  │   ███████╗██╗   ██╗██████╗ ███████╗██████╗ ███████╗██╗██╗     ███████╗   │
+#  │   ██╔════╝██║   ██║██╔══██╗██╔════╝██╔══██╗██╔════╝██║██║     ██╔════╝   │
+#  │   ███████╗██║   ██║██████╔╝█████╗  ██████╔╝█████╗  ██║██║     █████╗     │
+#  │   ╚════██║██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══╝  ██║██║     ██╔══╝     │
+#  │   ███████║╚██████╔╝██║     ███████╗██║  ██║██║     ██║███████╗███████╗   │
+#  │   ╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝   │
+#  ╰──────────────────────────────────────────────────────────────────────────╯                                                                  
+
+# ╭────────────────────╮
+# │ BASE CONFIGURATION │
+# ╰────────────────────╯
+
+theme = 'fanto-theme'
+editor = "nvim"                  # It's going to open files into nvim
+dir_editor = "nvim"              # It's going to open directories into nvim
+auto_check_update = true         # Check for superfile updates
+cd_on_quit = true
+default_open_file_preview = true # It's going to preview the file on the right
+show_image_preview = true        # It's going to preview images (Kitty terminal is the best for it)
+show_panel_footer_info = true    # Show informations from the files
+default_directory = "."          # It's going to open the current folder into superfile
+file_size_use_si = true          # Display file size as KB,MB,GB
+default_sort_type = 0 # Sort type by name (0: name, 1: size, 2: date, 3: type)
+sort_order_reversed = false # Sort false: Ascending, true: Descending
+case_sensitive_sort = false # Sort by case_sensitive
+shell_close_on_success = false # Close the shell on successful command execution
+debug = false # Activate debug mode
+ignore_missing_fields = false # To ignore missing fields in the config file
+show_hidden = true
+
+# ╭─────────────────────╮
+# │ STYLE CONFIGURATION │
+# ╰─────────────────────╯
+
+code_previewer = '' # Syntax highlighting: '' is for builtin chroma
+nerdfont = true # Use the nerdfont font and icons if available
+transparent_background = false # Set the background transparent if available.
+file_preview_width = 0
+sidebar_width = 20 # The lenght of the sidebar, 20 is the maximum and 0 hide
+
+# ╭────────────────────────────╮
+# │ BORDER STYLE CONFIGURATION │
+# ╰────────────────────────────╯
+
+border_top = '─'
+border_bottom = '─'
+border_left = '│'
+border_right = '│'
+border_top_left = '╭'
+border_top_right = '╮'
+border_bottom_left = '╰'
+border_bottom_right = '╯'
+border_middle_left = '├'
+border_middle_right = '┤'
+
+
+# ╭───────────────────────╮
+# │ PLUGINS CONFIGURATION │
+# ╰───────────────────────╯
+
+metadata = false
+enable_md5_checksum = false
+zoxide_support = false
